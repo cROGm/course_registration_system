@@ -1,0 +1,75 @@
+.root {
+    -fx-background-color: #e8f5e9;
+}
+
+.title-text {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1b5e20;
+}
+
+.subtitle-text {
+    -fx-font-size: 18px;
+    -fx-text-fill: #2e7d32;
+}
+
+.error-label {
+    -fx-text-fill: #d32f2f;
+}
+
+.button {
+    -fx-background-color: #2ecc71;
+    -fx-text-fill: white;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: #27ae60;
+}
+
+.text-field, .password-field, .combo-box {
+    -fx-pref-height: 35px;
+    -fx-background-color: #c8e6c9;
+}
+
+.header-background {
+    -fx-background-color: #1b5e20;
+    -fx-text-fill: white;
+}
+
+.sidebar {
+    -fx-background-color: #388e3c;
+    -fx-padding: 10;
+}
+
+.sidebar .button {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-alignment: CENTER_LEFT;
+    -fx-min-height: 40;
+}
+
+.sidebar .button:hover {
+    -fx-background-color: #2e7d32;
+}
+
+.welcome-text {
+    -fx-font-size: 32px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1b5e20;
+}
+
+.user-label {
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+}
+
+.sidebar-header {
+    -fx-text-fill: #a5d6a7;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-padding: 10 0 5 0;
+    -fx-border-color: transparent transparent #a5d6a7 transparent;
+    -fx-border-width: 0 0 1 0;
+    -fx-margin: 10 0 5 0;
+}

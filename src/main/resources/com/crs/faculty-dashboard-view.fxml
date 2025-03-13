@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane prefHeight="700.0" prefWidth="1000.0"
+            stylesheets="@styles/application.css"
+            xmlns="http://javafx.com/javafx/17"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.crs.controller.FacultyDashboardController">
+
+    <!-- Top Navigation Bar -->
+    <top>
+        <HBox alignment="CENTER_LEFT" spacing="10" styleClass="header-background">
+            <padding>
+                <Insets bottom="10" left="20" right="20" top="10"/>
+            </padding>
+            <Label  fx:id="facultyNameLabel" styleClass="title-text" />
+            <Region HBox.hgrow="ALWAYS"/>
+            <Text fx:id="welcomeUsernameText" styleClass="user-label"/>
+            <Button onAction="#handleLogout" text="Logout"/>
+        </HBox>
+    </top>
+
+    <!-- Left Side Menu -->
+    <left>
+        <VBox prefWidth="200" spacing="10" styleClass="sidebar">
+            <padding>
+                <Insets bottom="20" left="10" right="10" top="20"/>
+            </padding>
+            <Button maxWidth="Infinity" onAction="#showMyCourses" text="My Courses"/>
+            <Button maxWidth="Infinity" onAction="#showCourseEnrollments" text="Course Enrollments"/>
+            <Button maxWidth="Infinity" onAction="#showGradeManagement" text="Manage Grades"/>
+        </VBox>
+    </left>
+
+    <!-- Main Content Area -->
+    <center>
+        <StackPane fx:id="contentArea">
+            <padding>
+                <Insets bottom="20" left="20" right="20" top="20"/>
+            </padding>
+        </StackPane>
+    </center>
+
+</BorderPane>
